@@ -1,0 +1,154 @@
+.FormAdditionContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.worksheetTitleLable, .StartRangeByUserLable, .IncrementDecrementElementLable {
+    font-size: 16px;
+}
+
+.worksheetTitleInput {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #c5c5c5;
+    border-radius: 6px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box
+}
+
+.worksheetTitleInput:focus{
+    border:1px solid #5672c4;
+    transition: ease 0.5s;
+}
+
+.IncrementDecrementContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.decrement, .increment {
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #c5c5c5;
+    padding: 6px;
+    box-sizing: border-box
+}
+
+/* css border property for range and increment decrement element */
+.increment, .EndRange {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.decrement, .StartRangeByUserInput{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+/* css border property for range and increment decrement element */
+
+.increment:hover, .decrement:hover{
+    background-color: #c5c5c5;
+    transition: ease 0.5s;
+}
+
+div .IncrementDecrementContainer>input {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #c5c5c5;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+div .IncrementDecrementContainer>input:focus{
+    border:1px solid #5672c4;
+    transition: ease 0.5s;
+}
+
+.AdditionWorksheetButton{
+    width: 90px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    box-sizing: border-box;
+    background-color: #5672c4;
+    color: white;
+}
+
+.StartRangeByUserContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.StartRangeByUserTo, .StartRangeByUserInput, .EndRange{
+    width: 60px;
+    height: 40px;
+    border: 1px solid #c5c5c5;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.StartRangeByUserTo{
+    width: 40px;
+}
+
+
+.EndRange{
+    background-color: #c5c5c5a2;
+    opacity: 0.8;
+}
+
+.StartRangeByUserInput:focus{
+    border:1px solid #5672c4;
+    transition: ease 0.5s;
+}
+
+.rangeInstruction{
+    font-size: 14px;
+}
+
+div .decrement>i, .increment>i{
+    background: transparent;
+}
+
+.OperationSelectionContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+div .OperationSelectionContainer>select{
+    width: 80px;
+    height: 40px;
+    border-radius: 6px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #c5c5c5;
+}
+
+div .OperationSelectionContainer>select:focus{
+    border:1px solid #5672c4;
+    transition: ease 0.5s;
+    outline: none;
+}
+
+
+@media only screen and (max-width: 425px) {
+    .worksheetTitleLable, .StartRangeByUserLable, .IncrementDecrementElementLable {
+        font-size: 14px;
+    }
+
+    .worksheetTitleInput{
+        width: 200px;
+    }
+
+    .FormAdditionContainer {
+        row-gap: 12px;
+    }
+
+}
